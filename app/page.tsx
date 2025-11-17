@@ -47,13 +47,13 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-white dark:from-slate-900 dark:via-blue-950 dark:to-emerald-950">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-700">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-sky-50/95 dark:bg-slate-900/90 backdrop-blur-md border-b border-sky-200 dark:border-slate-700">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
-              className="text-2xl font-bold bg-gradient-to-r from-blue-700 via-green-600 to-blue-800 dark:from-blue-400 dark:via-green-400 dark:to-blue-500 bg-clip-text text-transparent flex items-center gap-2"
+              className="text-2xl font-bold bg-gradient-to-r from-blue-600 via-sky-500 to-green-600 dark:from-blue-400 dark:via-green-400 dark:to-blue-500 bg-clip-text text-transparent flex items-center gap-2"
             >
               <span className="text-2xl">🎨</span>
               Web Redesigned
@@ -63,16 +63,16 @@ export default function HomePage() {
               animate={{ opacity: 1, x: 0 }}
               className="flex gap-8 text-sm font-medium"
             >
-              <a href="#work" className="text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <a href="#work" className="text-slate-800 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 Gallery
               </a>
-              <a href="#services" className="text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <a href="#services" className="text-slate-800 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 Techniques
               </a>
-              <a href="#about" className="text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <a href="#about" className="text-slate-800 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 The Artist
               </a>
-              <a href="#contact" className="text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <a href="#contact" className="text-slate-800 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 Let's Create
               </a>
             </motion.div>
@@ -114,7 +114,7 @@ export default function HomePage() {
             </motion.h1>
             <motion.p
               variants={fadeInUp}
-              className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 mb-8 max-w-3xl mx-auto"
+              className="text-xl md:text-2xl text-slate-700 dark:text-slate-300 mb-8 max-w-3xl mx-auto"
             >
               There are no mistakes, only happy accidents. Every project is a fresh canvas
               where we blend creativity with code to create something beautiful.
@@ -200,10 +200,10 @@ export default function HomePage() {
             className="text-center mb-16"
           >
             <div className="text-6xl mb-4">🖼️</div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-800 dark:text-blue-50">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-900 dark:text-blue-50">
               The Gallery
             </h2>
-            <p className="text-lg text-slate-600 dark:text-slate-300">
+            <p className="text-lg text-slate-700 dark:text-slate-300">
               Each project is a unique landscape, painted with care and precision
             </p>
           </motion.div>
@@ -216,9 +216,9 @@ export default function HomePage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="group bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-blue-200 dark:border-blue-900"
+                className="group bg-sky-50/30 dark:bg-slate-800 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-blue-100 dark:border-blue-900"
               >
-                <div className="h-64 bg-gradient-to-br from-sky-400 via-blue-300 to-green-400 dark:from-blue-900 dark:via-slate-800 dark:to-emerald-900 relative overflow-hidden">
+                <div className="h-64 bg-gradient-to-br from-sky-300 via-blue-200 to-green-300 dark:from-blue-900 dark:via-slate-800 dark:to-emerald-900 relative overflow-hidden">
                   <div className="absolute inset-0 flex items-center justify-center text-white text-8xl opacity-30 group-hover:scale-110 transition-transform duration-500">
                     🎨
                   </div>
@@ -227,10 +227,10 @@ export default function HomePage() {
                   <div className="absolute bottom-0 right-0 w-40 h-40 bg-green-300/20 rounded-full blur-3xl"></div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-2xl font-bold mb-3 text-slate-800 dark:text-blue-50">
+                  <h3 className="text-2xl font-bold mb-3 text-slate-900 dark:text-blue-50">
                     {project.title}
                   </h3>
-                  <p className="text-slate-600 dark:text-slate-300 mb-4">
+                  <p className="text-slate-700 dark:text-slate-300 mb-4">
                     {project.longDescription}
                   </p>
                   <div className="flex flex-wrap gap-2 mb-4">
@@ -270,10 +270,10 @@ export default function HomePage() {
             className="text-center mb-16"
           >
             <div className="text-6xl mb-4">🖌️</div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-800 dark:text-blue-50">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-900 dark:text-blue-50">
               Painting Techniques
             </h2>
-            <p className="text-lg text-slate-600 dark:text-slate-300">
+            <p className="text-lg text-slate-700 dark:text-slate-300">
               Every brush stroke has a purpose, every layer adds depth
             </p>
           </motion.div>
@@ -286,13 +286,13 @@ export default function HomePage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-white dark:bg-slate-800 p-6 rounded-xl hover:shadow-lg transition-shadow border-2 border-blue-200 dark:border-blue-900"
+                className="bg-white dark:bg-slate-800 p-6 rounded-xl hover:shadow-lg transition-shadow border border-slate-200 dark:border-blue-900"
               >
                 <div className="text-5xl mb-4">{service.icon}</div>
-                <h3 className="text-xl font-bold mb-2 text-slate-800 dark:text-blue-50">
+                <h3 className="text-xl font-bold mb-2 text-slate-900 dark:text-blue-50">
                   {service.title}
                 </h3>
-                <p className="text-slate-600 dark:text-slate-300 text-sm mb-4">
+                <p className="text-slate-700 dark:text-slate-300 text-sm mb-4">
                   {service.description}
                 </p>
                 <ul className="space-y-1">
@@ -322,13 +322,13 @@ export default function HomePage() {
             className="text-center"
           >
             <div className="text-6xl mb-6">👨‍🎨</div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-800 dark:text-blue-50">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-900 dark:text-blue-50">
               The Artist's Corner
             </h2>
-            <p className="text-xl text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">
+            <p className="text-xl text-slate-700 dark:text-slate-300 mb-8 leading-relaxed">
               {about.bio}
             </p>
-            <p className="text-lg text-slate-600 dark:text-slate-300 italic">
+            <p className="text-lg text-slate-700 dark:text-slate-300 italic">
               "We don't make mistakes, just happy accidents. In web development, every challenge
               is an opportunity to create something even better than we imagined."
             </p>
