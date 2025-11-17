@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { projects, services, about } from "@/lib/content";
+import { BrushStrokeLogo } from "@/components/logos";
 
 // Konami code sequence: ↑ ↑ ↓ ↓ ← → ← → B A
 const KONAMI_CODE = [
@@ -53,10 +54,12 @@ export default function HomePage() {
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
-              className="text-2xl font-bold bg-gradient-to-r from-blue-600 via-sky-500 to-green-600 dark:from-blue-400 dark:via-green-400 dark:to-blue-500 bg-clip-text text-transparent flex items-center gap-2"
+              className="flex items-center gap-3"
             >
-              <span className="text-2xl">🎨</span>
-              Web Redesigned
+              <BrushStrokeLogo className="w-10 h-10" />
+              <span className="text-2xl font-bold font-grotesk bg-gradient-to-r from-blue-600 via-sky-500 to-green-600 dark:from-blue-400 dark:via-green-400 dark:to-blue-500 bg-clip-text text-transparent">
+                Web Redesigned
+              </span>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 20 }}
@@ -104,7 +107,7 @@ export default function HomePage() {
             </motion.div>
             <motion.h1
               variants={fadeInUp}
-              className="text-5xl md:text-7xl font-bold mb-6 text-slate-800 dark:text-blue-50"
+              className="text-5xl md:text-7xl font-bold font-grotesk mb-6 text-slate-800 dark:text-blue-50"
             >
               Let's Paint
               <br />
@@ -200,7 +203,7 @@ export default function HomePage() {
             className="text-center mb-16"
           >
             <div className="text-6xl mb-4">🖼️</div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-900 dark:text-blue-50">
+            <h2 className="text-4xl md:text-5xl font-bold font-grotesk mb-4 text-slate-900 dark:text-blue-50">
               The Gallery
             </h2>
             <p className="text-lg text-slate-700 dark:text-slate-300">
@@ -270,7 +273,7 @@ export default function HomePage() {
             className="text-center mb-16"
           >
             <div className="text-6xl mb-4">🖌️</div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-900 dark:text-blue-50">
+            <h2 className="text-4xl md:text-5xl font-bold font-grotesk mb-4 text-slate-900 dark:text-blue-50">
               Painting Techniques
             </h2>
             <p className="text-lg text-slate-700 dark:text-slate-300">
@@ -322,7 +325,7 @@ export default function HomePage() {
             className="text-center"
           >
             <div className="text-6xl mb-6">👨‍🎨</div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-900 dark:text-blue-50">
+            <h2 className="text-4xl md:text-5xl font-bold font-grotesk mb-6 text-slate-900 dark:text-blue-50">
               The Artist's Corner
             </h2>
             <p className="text-xl text-slate-700 dark:text-slate-300 mb-8 leading-relaxed">
@@ -351,7 +354,7 @@ export default function HomePage() {
             viewport={{ once: true }}
           >
             <div className="text-6xl mb-6">🎨</div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+            <h2 className="text-4xl md:text-5xl font-bold font-grotesk mb-6 text-white">
               Let's Paint Together
             </h2>
             <p className="text-xl text-blue-100 dark:text-blue-200 mb-8">
@@ -380,8 +383,8 @@ export default function HomePage() {
         <div className="container mx-auto max-w-6xl">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div>
-              <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent mb-2 flex items-center gap-2">
-                <span>🎨</span>
+              <div className="text-2xl font-bold font-grotesk bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent mb-2 flex items-center gap-3">
+                <BrushStrokeLogo className="w-8 h-8" />
                 Web Redesigned
               </div>
               <p className="text-sm text-slate-400">
@@ -448,7 +451,7 @@ export default function HomePage() {
           >
             <div className="text-center mb-6">
               <div className="text-6xl mb-4">🎨</div>
-              <h3 className="text-2xl font-bold text-blue-100 mb-2">
+              <h3 className="text-2xl font-bold font-grotesk text-blue-100 mb-2">
                 Secret Technique Unlocked!
               </h3>
               <p className="text-slate-300">
