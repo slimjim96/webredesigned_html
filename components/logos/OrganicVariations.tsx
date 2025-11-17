@@ -15,17 +15,27 @@ export function SplatterMountainLogo({ className = "w-16 h-16" }: LogoProps) {
           <stop offset="100%" stopColor="#0ea5e9" />
         </linearGradient>
       </defs>
+      {/* 3D Brown depth layers - dragging into distance */}
+      <path d="M 20 80 L 27 73 L 33 67 L 40 53 L 43 57 L 47 50 L 53 43 L 57 40 L 63 47 L 69 53 L 73 60 L 80 67 L 87 75 L 93 80"
+        fill="#78350f" opacity="0.15" />
+      <path d="M 18 78 L 25 71 L 31 65 L 38 51 L 41 55 L 45 48 L 51 41 L 55 38 L 61 45 L 67 51 L 71 58 L 78 65 L 85 73 L 91 78"
+        fill="#92400e" opacity="0.2" />
       {/* Rough mountain shape */}
       <path d="M 15 75 L 22 68 L 28 62 L 35 48 L 38 52 L 42 45 L 48 38 L 52 35 L 58 42 L 64 48 L 68 55 L 75 62 L 82 70 L 88 75 L 85 78 L 78 75 L 70 72 L 60 75 L 50 78 L 40 76 L 30 75 L 20 77 Z"
         fill="url(#splat1)" opacity="0.8" />
-      {/* Paint splatters */}
+      {/* Paint splatters with brown shadows */}
+      <circle cx="37" cy="52" r="8" fill="#78350f" opacity="0.2" />
       <circle cx="35" cy="50" r="8" fill="#22c55e" opacity="0.6" />
+      <circle cx="40" cy="50" r="5" fill="#92400e" opacity="0.15" />
       <circle cx="38" cy="48" r="5" fill="#34d399" opacity="0.5" />
+      <ellipse cx="67" cy="57" rx="10" ry="7" fill="#78350f" opacity="0.2" transform="rotate(-20 67 57)" />
       <ellipse cx="65" cy="55" rx="10" ry="7" fill="#0ea5e9" opacity="0.5" transform="rotate(-20 65 55)" />
+      <circle cx="52" cy="32" r="4" fill="#92400e" opacity="0.2" />
       <circle cx="50" cy="30" r="4" fill="#fbbf24" opacity="0.7" />
-      <circle cx="52" cy="28" r="2" fill="#f59e0b" opacity="0.6" />
-      {/* Drips */}
+      {/* Drips with depth */}
+      <ellipse cx="36" cy="62" rx="2" ry="5" fill="#78350f" opacity="0.3" />
       <ellipse cx="35" cy="60" rx="2" ry="5" fill="#22c55e" opacity="0.4" />
+      <ellipse cx="69" cy="67" rx="2" ry="4" fill="#92400e" opacity="0.3" />
       <ellipse cx="68" cy="65" rx="2" ry="4" fill="#0ea5e9" opacity="0.4" />
     </svg>
   );
@@ -35,17 +45,27 @@ export function SplatterMountainLogo({ className = "w-16 h-16" }: LogoProps) {
 export function BlobTreeLogo({ className = "w-16 h-16" }: LogoProps) {
   return (
     <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+      {/* 3D Brown shadow layers dragging back */}
+      <path d="M 52 27 Q 37 30 30 37 Q 24 44 27 52 Q 22 57 27 64 Q 32 72 42 70 Q 47 74 57 72 Q 67 74 74 67 Q 80 60 77 52 Q 80 44 74 37 Q 67 30 52 27 Z"
+        fill="#78350f" opacity="0.15" />
+      <path d="M 51 26 Q 36 29 29 36 Q 23 43 26 51 Q 21 56 26 63 Q 31 71 41 69 Q 46 73 56 71 Q 66 73 73 66 Q 79 59 76 51 Q 79 43 73 36 Q 66 29 51 26 Z"
+        fill="#92400e" opacity="0.2" />
       {/* Organic tree canopy - irregular blob */}
       <path d="M 50 25 Q 35 28 28 35 Q 22 42 25 50 Q 20 55 25 62 Q 30 70 40 68 Q 45 72 55 70 Q 65 72 72 65 Q 78 58 75 50 Q 78 42 72 35 Q 65 28 50 25 Z"
         fill="#10b981" opacity="0.7" />
       <path d="M 48 30 Q 38 32 33 40 Q 30 48 35 55 Q 40 62 50 60 Q 60 62 65 55 Q 70 48 67 40 Q 62 32 48 30 Z"
         fill="#22c55e" opacity="0.6" />
-      {/* Rough trunk */}
+      {/* Rough trunk with brown depth */}
+      <path d="M 49 62 L 48 72 L 47 82 L 46 90 L 50 92 L 54 92 L 58 90 L 57 82 L 56 72 L 55 62 Z"
+        fill="#78350f" opacity="0.2" />
       <path d="M 47 60 L 46 70 L 45 80 L 44 88 L 48 90 L 52 90 L 56 88 L 55 80 L 54 70 L 53 60 Z"
         fill="#92400e" opacity="0.8" />
-      {/* Paint splashes */}
+      {/* Paint splashes with shadows */}
+      <circle cx="42" cy="42" r="3" fill="#78350f" opacity="0.2" />
       <circle cx="40" cy="40" r="3" fill="#fbbf24" opacity="0.6" />
+      <circle cx="60" cy="47" r="2" fill="#92400e" opacity="0.2" />
       <circle cx="58" cy="45" r="2" fill="#fbbf24" opacity="0.5" />
+      <ellipse cx="54" cy="37" rx="4" ry="3" fill="#78350f" opacity="0.15" />
       <ellipse cx="52" cy="35" rx="4" ry="3" fill="#34d399" opacity="0.4" />
     </svg>
   );
