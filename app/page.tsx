@@ -13,6 +13,7 @@ import {
   PineNeedles,
   PaintDrips,
   GradientBlobs,
+  JaggedTree,
 } from "@/components/organic";
 import {
   WatercolorSunriseLogo,
@@ -63,6 +64,8 @@ export default function HomePage() {
     <div className="min-h-screen bg-gradient-to-b from-amber-50 via-sky-50 to-green-50 dark:from-slate-900 dark:via-blue-950 dark:to-emerald-950 relative overflow-hidden">
       {/* Organic Background Effects */}
       <GradientBlobs />
+      <JaggedTree position="left" />
+      <JaggedTree position="right" />
       <FloatingTwigs />
       <OrganicPixels />
       <PineNeedles />

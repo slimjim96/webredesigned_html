@@ -6,4 +6,5 @@ export {
   PineNeedles,
   PaintDrips,
   GradientBlobs,
+  JaggedTree,
 } from './OrganicBackground';
