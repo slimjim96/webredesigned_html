@@ -11,7 +11,7 @@ const fadeIn = {
 
 export default function AdventuresPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-sky-100 via-blue-100 to-green-100 dark:from-slate-900 dark:via-blue-950 dark:to-emerald-950 relative overflow-hidden">
+    <div className="min-h-screen bg-white dark:bg-gradient-to-br dark:from-slate-900 dark:via-blue-950 dark:to-emerald-950 relative overflow-hidden">
       {/* Decorative Nature Elements - soft and peaceful */}
       <div className="absolute top-10 left-10 text-8xl opacity-10">🌲</div>
       <div className="absolute top-20 right-20 text-6xl opacity-10">☁️</div>
@@ -36,10 +36,10 @@ export default function AdventuresPage() {
           <h1 className="text-6xl font-bold mb-4 bg-gradient-to-r from-blue-600 via-sky-500 to-green-600 dark:from-blue-400 dark:via-sky-400 dark:to-green-400 bg-clip-text text-transparent">
             Choose Your Canvas
           </h1>
-          <p className="text-xl text-slate-700 dark:text-slate-300 mb-2">
+          <p className="text-xl text-slate-800 dark:text-slate-300 mb-2">
             Two different painting styles, one beautiful portfolio
           </p>
-          <p className="text-sm text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+          <p className="text-sm text-slate-700 dark:text-slate-400 max-w-2xl mx-auto">
             Like choosing between landscapes and portraits, each style shows the work in its own light.
             Both are painted with care, just different techniques.
           </p>
@@ -54,16 +54,16 @@ export default function AdventuresPage() {
             transition={{ delay: 0.2 }}
           >
             <Link href="/adventures/business">
-              <div className="group relative bg-gradient-to-br from-blue-50 to-sky-100 dark:from-blue-950 dark:to-sky-900 rounded-3xl p-8 h-full cursor-pointer hover:scale-105 transition-transform duration-300 shadow-xl border-2 border-blue-200 dark:border-blue-800">
+              <div className="group relative bg-sky-50/30 dark:bg-gradient-to-br dark:from-blue-950 dark:to-sky-900 rounded-3xl p-8 h-full cursor-pointer hover:scale-105 transition-transform duration-300 shadow-md hover:shadow-xl border border-blue-100 dark:border-blue-800">
                 {/* Icon */}
                 <div className="text-8xl mb-6 group-hover:scale-110 transition-transform duration-300">
                   🖼️
                 </div>
 
                 {/* Title */}
-                <h2 className="text-4xl font-bold mb-4 text-slate-800 dark:text-blue-100">Landscape View</h2>
+                <h2 className="text-4xl font-bold mb-4 text-slate-900 dark:text-blue-100">Landscape View</h2>
                 <p className="text-blue-600 dark:text-blue-300 mb-2 text-sm uppercase tracking-wide font-semibold">Business Canvas</p>
-                <p className="text-slate-600 dark:text-slate-300 mb-6 text-lg">
+                <p className="text-slate-700 dark:text-slate-300 mb-6 text-lg">
                   For those seeking the big picture - strategy, value, and results
                 </p>
 
@@ -106,16 +106,16 @@ export default function AdventuresPage() {
             transition={{ delay: 0.3 }}
           >
             <Link href="/adventures/developer">
-              <div className="group relative bg-gradient-to-br from-green-50 to-emerald-100 dark:from-emerald-950 dark:to-green-900 rounded-3xl p-8 h-full cursor-pointer hover:scale-105 transition-transform duration-300 shadow-xl border-2 border-green-200 dark:border-green-800">
+              <div className="group relative bg-green-50/30 dark:bg-gradient-to-br dark:from-emerald-950 dark:to-green-900 rounded-3xl p-8 h-full cursor-pointer hover:scale-105 transition-transform duration-300 shadow-md hover:shadow-xl border border-green-100 dark:border-green-800">
                 {/* Icon */}
                 <div className="text-8xl mb-6 group-hover:scale-110 transition-transform duration-300">
                   🖌️
                 </div>
 
                 {/* Title */}
-                <h2 className="text-4xl font-bold mb-4 text-slate-800 dark:text-green-100">Detail View</h2>
+                <h2 className="text-4xl font-bold mb-4 text-slate-900 dark:text-green-100">Detail View</h2>
                 <p className="text-green-600 dark:text-green-300 mb-2 text-sm uppercase tracking-wide font-semibold">Technical Canvas</p>
-                <p className="text-slate-600 dark:text-slate-300 mb-6 text-lg">
+                <p className="text-slate-700 dark:text-slate-300 mb-6 text-lg">
                   For those who love the brushwork - code, craft, and creativity
                 </p>
 
@@ -159,7 +159,7 @@ export default function AdventuresPage() {
           transition={{ delay: 0.6 }}
           className="text-center"
         >
-          <p className="text-slate-600 dark:text-slate-400 mb-4 flex items-center justify-center gap-2">
+          <p className="text-slate-700 dark:text-slate-400 mb-4 flex items-center justify-center gap-2">
             <span>🎨</span>
             Not sure which style to choose?
           </p>

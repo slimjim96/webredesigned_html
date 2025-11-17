@@ -45,7 +45,7 @@ export default function HomePage() {
   }, [konamiIndex]);
 
   return (
-    <div className="min-h-screen bg-white dark:from-slate-900 dark:via-blue-950 dark:to-emerald-950">
+    <div className="min-h-screen bg-white dark:bg-gradient-to-b dark:from-slate-900 dark:via-blue-950 dark:to-emerald-950">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-sky-50/95 dark:bg-slate-900/90 backdrop-blur-md border-b border-sky-200 dark:border-slate-700">
         <div className="container mx-auto px-6 py-4">
@@ -141,7 +141,7 @@ export default function HomePage() {
       </section>
 
       {/* Stats Section - The Palette */}
-      <section className="py-16 bg-slate-50 dark:from-slate-800 dark:via-blue-950 dark:to-emerald-950">
+      <section className="py-16 bg-slate-50 dark:bg-gradient-to-r dark:from-slate-800 dark:via-blue-950 dark:to-emerald-950">
         <div className="container mx-auto px-6">
           <motion.h3
             initial={{ opacity: 0 }}
@@ -261,7 +261,7 @@ export default function HomePage() {
       </section>
 
       {/* Services - Painting Techniques */}
-      <section id="services" className="py-20 px-6 bg-slate-50 dark:from-emerald-950 dark:via-slate-900 dark:to-blue-950">
+      <section id="services" className="py-20 px-6 bg-slate-50 dark:bg-gradient-to-b dark:from-emerald-950 dark:via-slate-900 dark:to-blue-950">
         <div className="container mx-auto max-w-6xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
