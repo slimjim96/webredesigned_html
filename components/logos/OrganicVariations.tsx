@@ -127,58 +127,67 @@ export function BlobTreeLogo({ className = "w-16 h-16" }: LogoProps) {
   );
 }
 
-// 3. Realistic Sunrise with Atmospheric Gradients
+// 3. JAGGED Sunrise with HIGH CONTRAST Atmospheric Gradients
 export function WatercolorSunriseLogo({ className = "w-16 h-16" }: LogoProps) {
   return (
     <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
       <defs>
-        {/* Realistic sun gradient */}
+        {/* BRIGHT sun gradient */}
         <radialGradient id="realisticSun" cx="50%" cy="50%">
-          <stop offset="0%" stopColor="#fef3c7" />
-          <stop offset="30%" stopColor="#fbbf24" stopOpacity="0.9" />
-          <stop offset="60%" stopColor="#f59e0b" stopOpacity="0.6" />
-          <stop offset="100%" stopColor="#ea580c" stopOpacity="0.2" />
+          <stop offset="0%" stopColor="#ffffff" />
+          <stop offset="20%" stopColor="#fef3c7" />
+          <stop offset="40%" stopColor="#fbbf24" stopOpacity="0.95" />
+          <stop offset="70%" stopColor="#f59e0b" stopOpacity="0.7" />
+          <stop offset="100%" stopColor="#ea580c" stopOpacity="0.3" />
         </radialGradient>
-        {/* Sky gradient with brown horizon */}
+        {/* Sky gradient with dark horizon */}
         <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stopColor="#0ea5e9" stopOpacity="0.3" />
-          <stop offset="50%" stopColor="#fbbf24" stopOpacity="0.2" />
-          <stop offset="100%" stopColor="#78350f" stopOpacity="0.4" />
+          <stop offset="0%" stopColor="#0ea5e9" stopOpacity="0.5" />
+          <stop offset="50%" stopColor="#fbbf24" stopOpacity="0.4" />
+          <stop offset="100%" stopColor="#1a0a00" stopOpacity="0.5" />
         </linearGradient>
-        {/* Mountain silhouette gradient */}
+        {/* DARK mountain silhouette gradient */}
         <linearGradient id="mountainSil" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stopColor="#1e293b" stopOpacity="0.8" />
-          <stop offset="50%" stopColor="#78350f" stopOpacity="0.7" />
-          <stop offset="100%" stopColor="#92400e" stopOpacity="0.9" />
+          <stop offset="0%" stopColor="#0f172a" stopOpacity="0.95" />
+          <stop offset="50%" stopColor="#1a0a00" stopOpacity="0.9" />
+          <stop offset="100%" stopColor="#0a0400" stopOpacity="1" />
         </linearGradient>
       </defs>
 
       {/* Sky atmosphere */}
       <rect x="0" y="0" width="100" height="75" fill="url(#skyGrad)" />
 
-      {/* Sun with atmospheric glow */}
-      <circle cx="50" cy="35" r="22" fill="url(#realisticSun)" opacity="0.8" />
-      <circle cx="50" cy="35" r="15" fill="#fbbf24" opacity="0.9" />
-      <circle cx="50" cy="35" r="10" fill="#fef3c7" />
+      {/* Sun with HIGH CONTRAST atmospheric glow */}
+      <circle cx="50" cy="35" r="25" fill="url(#realisticSun)" opacity="0.9" />
+      <circle cx="50" cy="35" r="18" fill="#fbbf24" opacity="1" />
+      <circle cx="50" cy="35" r="12" fill="#fef3c7" opacity="1" />
+      <circle cx="50" cy="35" r="8" fill="#ffffff" opacity="0.9" />
 
-      {/* Sun rays - randomized lengths */}
-      <path d="M 50 12 L 50 5" stroke="#fbbf24" strokeWidth="2" opacity="0.5" strokeLinecap="round" />
-      <path d="M 70 20 L 77 13" stroke="#f59e0b" strokeWidth="1.5" opacity="0.4" strokeLinecap="round" />
-      <path d="M 78 35 L 85 35" stroke="#fbbf24" strokeWidth="2" opacity="0.5" strokeLinecap="round" />
-      <path d="M 30 20 L 23 13" stroke="#f59e0b" strokeWidth="1.5" opacity="0.4" strokeLinecap="round" />
-      <path d="M 22 35 L 15 35" stroke="#fbbf24" strokeWidth="2" opacity="0.5" strokeLinecap="round" />
+      {/* JAGGED sun rays - sharp angles */}
+      <path d="M 50 8 L 50 1" stroke="#fef3c7" strokeWidth="3" opacity="0.8" strokeLinecap="square" />
+      <path d="M 73 18 L 81 10" stroke="#fbbf24" strokeWidth="2.5" opacity="0.7" strokeLinecap="square" />
+      <path d="M 82 35 L 90 35" stroke="#fef3c7" strokeWidth="3" opacity="0.8" strokeLinecap="square" />
+      <path d="M 73 52 L 81 60" stroke="#fbbf24" strokeWidth="2.5" opacity="0.7" strokeLinecap="square" />
+      <path d="M 27 18 L 19 10" stroke="#fbbf24" strokeWidth="2.5" opacity="0.7" strokeLinecap="square" />
+      <path d="M 18 35 L 10 35" stroke="#fef3c7" strokeWidth="3" opacity="0.8" strokeLinecap="square" />
+      <path d="M 27 52 L 19 60" stroke="#fbbf24" strokeWidth="2.5" opacity="0.7" strokeLinecap="square" />
 
-      {/* Far mountains - atmospheric perspective */}
-      <path d="M 5 68 L 20 58 L 35 62 L 50 60 L 65 64 L 80 60 L 95 68"
-        fill="#78350f" opacity="0.3" />
+      {/* Far mountains - JAGGED atmospheric perspective */}
+      <path d="M 5 69 L 12 64 L 18 66 L 24 62 L 30 64 L 36 61 L 42 63 L 48 61 L 54 63 L 60 60 L 66 63 L 72 61 L 78 64 L 84 61 L 90 65 L 95 68"
+        fill="#451a03" opacity="0.5" />
 
-      {/* Mid mountains */}
-      <path d="M 10 70 L 25 56 L 40 60 L 50 55 L 60 58 L 75 54 L 90 70"
-        fill="#92400e" opacity="0.5" />
+      {/* Mid mountains - MORE JAGGED */}
+      <path d="M 10 71 L 16 64 L 22 66 L 28 60 L 34 63 L 40 61 L 46 65 L 52 59 L 58 62 L 64 57 L 70 61 L 76 58 L 82 63 L 88 61 L 94 67"
+        fill="#1a0a00" opacity="0.7" />
 
-      {/* Front mountains - realistic silhouette */}
-      <path d="M 10 75 L 18 65 L 25 60 L 32 52 L 38 58 L 45 62 L 50 60 L 55 64 L 62 56 L 70 62 L 78 68 L 85 72 L 90 75"
+      {/* Front mountains - VERY JAGGED DARK silhouette */}
+      <path d="M 10 76 L 14 70 L 18 66 L 22 62 L 26 58 L 30 54 L 34 50 L 38 54 L 42 57 L 46 60 L 50 56 L 54 59 L 58 62 L 62 54 L 66 57 L 70 60 L 74 63 L 78 66 L 82 69 L 86 72 L 90 76"
         fill="url(#mountainSil)" />
+
+      {/* BRIGHT highlights on mountain ridges */}
+      <path d="M 34 50 L 36 51" stroke="#fef3c7" strokeWidth="1" opacity="0.6" />
+      <path d="M 50 56 L 52 57" stroke="#fef3c7" strokeWidth="1" opacity="0.7" />
+      <path d="M 62 54 L 64 55" stroke="#fef3c7" strokeWidth="1" opacity="0.6" />
     </svg>
   );
 }
@@ -233,62 +242,71 @@ export function BrushPathLogo({ className = "w-16 h-16" }: LogoProps) {
   );
 }
 
-// 5. Realistic Layered Landscape with Depth
+// 5. JAGGED Layered Landscape with HIGH CONTRAST Depth
 export function OrganicLayersLogo({ className = "w-16 h-16" }: LogoProps) {
   return (
     <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
       <defs>
-        {/* Sky to horizon gradient */}
+        {/* Sky to horizon gradient - more contrast */}
         <linearGradient id="skyHorizon" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stopColor="#0ea5e9" stopOpacity="0.4" />
-          <stop offset="50%" stopColor="#fbbf24" stopOpacity="0.2" />
-          <stop offset="100%" stopColor="#78350f" stopOpacity="0.3" />
+          <stop offset="0%" stopColor="#0ea5e9" stopOpacity="0.6" />
+          <stop offset="50%" stopColor="#fbbf24" stopOpacity="0.4" />
+          <stop offset="100%" stopColor="#1a0a00" stopOpacity="0.3" />
         </linearGradient>
-        {/* Far hills gradient */}
+        {/* Far hills gradient - very dark */}
         <linearGradient id="farHills" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stopColor="#78350f" stopOpacity="0.3" />
-          <stop offset="100%" stopColor="#92400e" stopOpacity="0.5" />
+          <stop offset="0%" stopColor="#451a03" stopOpacity="0.5" />
+          <stop offset="100%" stopColor="#1a0a00" stopOpacity="0.8" />
         </linearGradient>
-        {/* Mid hills gradient */}
+        {/* Mid hills gradient - dark with green */}
         <linearGradient id="midHills" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stopColor="#22c55e" stopOpacity="0.5" />
-          <stop offset="100%" stopColor="#78350f" stopOpacity="0.7" />
+          <stop offset="0%" stopColor="#22c55e" stopOpacity="0.7" />
+          <stop offset="100%" stopColor="#1a0a00" stopOpacity="0.9" />
         </linearGradient>
-        {/* Near hills gradient */}
+        {/* Near hills gradient - darkest */}
         <linearGradient id="nearHills" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stopColor="#10b981" stopOpacity="0.7" />
-          <stop offset="100%" stopColor="#92400e" stopOpacity="0.9" />
+          <stop offset="0%" stopColor="#84cc16" stopOpacity="0.8" />
+          <stop offset="50%" stopColor="#365314" stopOpacity="0.9" />
+          <stop offset="100%" stopColor="#0a0400" stopOpacity="1" />
         </linearGradient>
       </defs>
 
       {/* Sky */}
       <rect x="0" y="0" width="100" height="70" fill="url(#skyHorizon)" />
 
-      {/* Sun */}
-      <circle cx="75" cy="25" r="12" fill="#fbbf24" opacity="0.7" />
-      <circle cx="75" cy="25" r="9" fill="#fef3c7" opacity="0.8" />
+      {/* Sun with HIGH CONTRAST */}
+      <circle cx="75" cy="25" r="14" fill="#fbbf24" opacity="0.9" />
+      <circle cx="75" cy="25" r="10" fill="#fef3c7" opacity="1" />
+      <circle cx="75" cy="25" r="6" fill="#ffffff" opacity="0.8" />
 
-      {/* Farthest layer - atmospheric */}
-      <path d="M 0 75 Q 20 72 40 75 Q 60 78 80 74 Q 90 72 100 75 L 100 100 L 0 100 Z"
+      {/* Farthest layer - JAGGED atmospheric hills */}
+      <path d="M 0 76 L 8 74 L 12 76 L 18 73 L 22 75 L 28 72 L 34 74 L 40 76 L 46 74 L 52 77 L 58 75 L 64 78 L 70 75 L 76 73 L 82 75 L 88 74 L 94 76 L 100 75 L 100 100 L 0 100 Z"
         fill="url(#farHills)" />
 
-      {/* Far layer */}
-      <path d="M 0 70 L 15 65 L 30 68 L 45 63 L 60 67 L 75 64 L 90 68 L 100 70 L 100 100 L 0 100 Z"
-        fill="#78350f" opacity="0.4" />
+      {/* Far layer - MORE JAGGED */}
+      <path d="M 0 71 L 6 67 L 10 69 L 15 65 L 20 68 L 25 66 L 30 69 L 36 66 L 42 68 L 48 64 L 54 67 L 60 68 L 66 65 L 72 67 L 78 65 L 84 68 L 90 69 L 95 67 L 100 70 L 100 100 L 0 100 Z"
+        fill="#451a03" opacity="0.6" />
 
-      {/* Mid layer - realistic hills */}
-      <path d="M 0 68 L 20 58 L 35 62 L 50 55 L 65 60 L 80 57 L 95 65 L 100 68 L 100 100 L 0 100 Z"
+      {/* Mid layer - JAGGED realistic hills */}
+      <path d="M 0 69 L 8 62 L 14 64 L 20 58 L 26 61 L 32 59 L 38 63 L 44 60 L 50 55 L 56 58 L 62 61 L 68 59 L 74 62 L 80 57 L 86 60 L 92 63 L 98 61 L 100 68 L 100 100 L 0 100 Z"
         fill="url(#midHills)" />
 
-      {/* Near layer - detailed foreground */}
-      <path d="M 0 65 L 25 52 L 40 56 L 55 50 L 70 54 L 85 52 L 100 60 L 100 100 L 0 100 Z"
+      {/* Near layer - VERY JAGGED dark foreground */}
+      <path d="M 0 66 L 6 60 L 12 62 L 18 58 L 25 52 L 30 55 L 36 53 L 42 57 L 48 54 L 55 50 L 60 53 L 66 51 L 72 55 L 78 52 L 85 54 L 90 51 L 96 55 L 100 60 L 100 100 L 0 100 Z"
         fill="url(#nearHills)" />
 
-      {/* Grass texture on near hill - randomized */}
-      <path d="M 30 58 L 30 55" stroke="#22c55e" strokeWidth="0.5" opacity="0.6" />
-      <path d="M 35 59 L 35 56" stroke="#10b981" strokeWidth="0.5" opacity="0.5" />
-      <path d="M 48 54 L 48 51" stroke="#34d399" strokeWidth="0.5" opacity="0.6" />
-      <path d="M 62 56 L 62 53" stroke="#22c55e" strokeWidth="0.5" opacity="0.5" />
+      {/* HIGH CONTRAST grass texture - light on dark */}
+      <path d="M 28 56 L 28 52" stroke="#d9f99d" strokeWidth="1" opacity="0.9" />
+      <path d="M 32 57 L 32 53" stroke="#a3e635" strokeWidth="1" opacity="0.8" />
+      <path d="M 45 55 L 45 51" stroke="#d9f99d" strokeWidth="1" opacity="0.9" />
+      <path d="M 50 51 L 50 47" stroke="#fef3c7" strokeWidth="1" opacity="0.7" />
+      <path d="M 58 54 L 58 50" stroke="#d9f99d" strokeWidth="1" opacity="0.8" />
+      <path d="M 65 52 L 65 48" stroke="#a3e635" strokeWidth="1" opacity="0.9" />
+
+      {/* Dark shadow details */}
+      <circle cx="35" cy="58" r="1.5" fill="#0a0400" opacity="0.8" />
+      <circle cx="48" cy="56" r="1" fill="#1a0a00" opacity="0.9" />
+      <circle cx="70" cy="55" r="1.5" fill="#0a0400" opacity="0.7" />
     </svg>
   );
 }
@@ -346,43 +364,73 @@ export function SplatterForestLogo({ className = "w-16 h-16" }: LogoProps) {
   );
 }
 
-// 7. Realistic Cloud Formation
+// 7. JAGGED Cloud Formation with HIGH CONTRAST
 export function RoughCloudLogo({ className = "w-16 h-16" }: LogoProps) {
   return (
     <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
       <defs>
+        {/* BRIGHT cloud gradient */}
         <radialGradient id="cloudGrad1" cx="40%" cy="40%">
-          <stop offset="0%" stopColor="#f8fafc" />
-          <stop offset="60%" stopColor="#e0f2fe" stopOpacity="0.9" />
-          <stop offset="100%" stopColor="#bae6fd" stopOpacity="0.6" />
+          <stop offset="0%" stopColor="#ffffff" />
+          <stop offset="40%" stopColor="#f8fafc" />
+          <stop offset="70%" stopColor="#e0f2fe" stopOpacity="0.95" />
+          <stop offset="100%" stopColor="#bae6fd" stopOpacity="0.7" />
         </radialGradient>
+        {/* DARK cloud shadow */}
+        <radialGradient id="cloudShadow" cx="50%" cy="70%">
+          <stop offset="0%" stopColor="#334155" stopOpacity="0.4" />
+          <stop offset="100%" stopColor="#1e293b" stopOpacity="0.6" />
+        </radialGradient>
+        {/* Sky gradient */}
         <linearGradient id="skyBg" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stopColor="#0ea5e9" stopOpacity="0.5" />
-          <stop offset="100%" stopColor="#78350f" stopOpacity="0.3" />
+          <stop offset="0%" stopColor="#0ea5e9" stopOpacity="0.7" />
+          <stop offset="100%" stopColor="#1a0a00" stopOpacity="0.4" />
         </linearGradient>
+        {/* DARK hill gradient */}
         <linearGradient id="hillGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stopColor="#10b981" stopOpacity="0.7" />
-          <stop offset="100%" stopColor="#92400e" stopOpacity="0.9" />
+          <stop offset="0%" stopColor="#22543d" stopOpacity="0.9" />
+          <stop offset="100%" stopColor="#0a0400" stopOpacity="1" />
         </linearGradient>
       </defs>
 
       {/* Sky */}
       <rect x="0" y="0" width="100" height="75" fill="url(#skyBg)" />
 
-      {/* Cloud formation */}
-      <circle cx="30" cy="32" r="11" fill="url(#cloudGrad1)" />
-      <circle cx="43" cy="28" r="14" fill="url(#cloudGrad1)" />
-      <circle cx="57" cy="30" r="12" fill="url(#cloudGrad1)" />
-      <circle cx="70" cy="34" r="10" fill="url(#cloudGrad1)" />
-      <circle cx="38" cy="38" r="9" fill="#e0f2fe" opacity="0.8" />
-      <circle cx="52" cy="40" r="11" fill="#f8fafc" opacity="0.9" />
-      <circle cx="62" cy="38" r="8" fill="#dbeafe" opacity="0.85" />
+      {/* JAGGED cloud formation with HIGH CONTRAST light/dark */}
+      {/* Dark cloud shadows first */}
+      <ellipse cx="30" cy="36" rx="12" ry="9" fill="url(#cloudShadow)" />
+      <ellipse cx="44" cy="33" rx="15" ry="11" fill="url(#cloudShadow)" />
+      <ellipse cx="58" cy="35" rx="13" ry="10" fill="url(#cloudShadow)" />
+      <ellipse cx="71" cy="39" rx="11" ry="8" fill="url(#cloudShadow)" />
 
-      {/* Hills below */}
-      <path d="M 10 75 L 25 62 L 40 68 L 55 60 L 70 65 L 85 58 L 95 70 L 100 75"
+      {/* BRIGHT white clouds on top - jagged overlapping circles */}
+      <circle cx="28" cy="32" r="11" fill="url(#cloudGrad1)" />
+      <circle cx="35" cy="30" r="9" fill="#ffffff" opacity="0.9" />
+      <circle cx="42" cy="27" r="14" fill="url(#cloudGrad1)" />
+      <circle cx="48" cy="29" r="10" fill="#ffffff" opacity="0.95" />
+      <circle cx="55" cy="28" r="13" fill="url(#cloudGrad1)" />
+      <circle cx="61" cy="31" r="9" fill="#ffffff" opacity="0.9" />
+      <circle cx="68" cy="33" r="11" fill="url(#cloudGrad1)" />
+      <circle cx="72" cy="35" r="8" fill="#ffffff" opacity="0.85" />
+
+      {/* More jagged bright highlights */}
+      <circle cx="38" cy="34" r="7" fill="#ffffff" opacity="1" />
+      <circle cx="52" cy="35" r="9" fill="#ffffff" opacity="1" />
+      <circle cx="63" cy="37" r="6" fill="#ffffff" opacity="0.95" />
+
+      {/* Light edge details */}
+      <circle cx="32" cy="28" r="3" fill="#fef3c7" opacity="0.8" />
+      <circle cx="58" cy="26" r="2.5" fill="#fef3c7" opacity="0.9" />
+
+      {/* JAGGED hills below - dark foreground */}
+      <path d="M 10 76 L 16 70 L 22 72 L 28 66 L 34 69 L 40 68 L 46 72 L 52 66 L 58 69 L 64 64 L 70 67 L 76 62 L 82 66 L 88 63 L 94 68 L 100 76"
         fill="url(#hillGrad)" />
-      <path d="M 5 72 L 20 58 L 35 63 L 50 55 L 65 60 L 80 54 L 95 65"
-        fill="#78350f" opacity="0.5" />
+      <path d="M 5 73 L 12 66 L 18 68 L 25 62 L 32 65 L 39 63 L 46 67 L 53 61 L 60 64 L 67 59 L 74 63 L 81 58 L 88 62 L 95 66"
+        fill="#1a0a00" opacity="0.7" />
+
+      {/* Very dark foreground shadow */}
+      <path d="M 0 78 L 10 75 L 20 77 L 30 74 L 40 76 L 50 73 L 60 75 L 70 72 L 80 74 L 90 71 L 100 73 L 100 100 L 0 100 Z"
+        fill="#0a0400" opacity="0.5" />
     </svg>
   );
 }
