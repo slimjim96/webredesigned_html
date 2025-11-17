@@ -196,9 +196,21 @@ export default function BrandShowcase() {
           <p className="text-slate-700 dark:text-slate-300 mb-4">
             🎨 Which design speaks to you? Each tells a different story of growth, creativity, and welcoming spaces.
           </p>
-          <p className="text-sm text-slate-600 dark:text-slate-400">
+          <p className="text-sm text-slate-600 dark:text-slate-400 mb-6">
             These are all SVG vectors that scale beautifully and work in any size or context.
           </p>
+
+          <div className="mt-8 p-6 bg-gradient-to-r from-green-50 to-amber-50 dark:from-emerald-950 dark:to-amber-950 rounded-xl border-2 border-green-300 dark:border-green-700">
+            <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
+              ✨ Want something wilder? Check out the organic, painterly variations!
+            </p>
+            <Link
+              href="/brand-organic"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-lg font-medium transition-colors"
+            >
+              🌿 View 20 Organic Logo Variations →
+            </Link>
+          </div>
         </motion.div>
       </div>
     </div>
